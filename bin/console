@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+require 'bundler/setup'
+require 'no_equals/clt'
+require 'irb'
+
+IRB.start
