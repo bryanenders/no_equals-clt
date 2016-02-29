@@ -1,3 +1,12 @@
 #!/usr/bin/env ruby
 
 require 'no_equals/clt'
+
+module NoEquals::CLT
+  print '> '
+  STDIN.each_line do |line|
+    result = Evaluation.perform(line)
+    puts Formatting.perform(result)
+    print '> '
+  end
+end
